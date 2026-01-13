@@ -1,0 +1,328 @@
+{
+  "conversations": [
+    {
+      "message": "hi",
+      "emotion": "neutral",
+      "response": "Hello! I'm your movie companion. How are you feeling today?",
+      "timestamp": "2026-01-01T23:47:00.345868"
+    },
+    {
+      "message": "how are you",
+      "emotion": "neutral",
+      "response": "I'm getting a calm vibe from you. How are things going in general?\n\nWhat would help you feel better right now?\n\nIf you'd like, I can also recommend some movies that might match your mood!",
+      "timestamp": "2026-01-01T23:47:07.402668"
+    },
+    {
+      "message": "hi",
+      "emotion": "neutral",
+      "response": "Hello! I'm ready to chat or find you some amazing movies. What's up?",
+      "timestamp": "2026-01-01T23:51:07.267315"
+    },
+    {
+      "message": "hi",
+      "emotion": "neutral",
+      "response": "Hello! I'm ready to chat or find you some amazing movies. What's up?",
+      "timestamp": "2026-01-01T23:55:20.588023"
+    },
+    {
+      "message": "i m good how are you",
+      "emotion": "joy",
+      "response": "I can feel your positive energy! That's wonderful to hear.\n\nWhat's got you feeling so good today?\n\nIf you'd like, I can also recommend some movies that might match your mood!",
+      "timestamp": "2026-01-01T23:55:26.568014"
+    },
+    {
+      "message": "yes but i m feeling kinda sad rn",
+      "emotion": "sadness",
+      "response": "I can hear that you're hurting. It's okay to feel sad sometimes.\n\nWhat's been going on that's making you feel this way?\n\nIf you'd like, I can also recommend some movies that might match your mood!",
+      "timestamp": "2026-01-01T23:55:39.421016"
+    },
+    {
+      "message": "hii",
+      "emotion": "neutral",
+      "response": "I understand. What's been on your mind about this? If you'd like, I could also suggest a movie that might match your mood.",
+      "timestamp": "2026-01-01T23:59:17.156618"
+    },
+    {
+      "message": "how are youuu",
+      "emotion": "neutral",
+      "response": "I hear you. Tell me more about that.",
+      "timestamp": "2026-01-01T23:59:25.552415"
+    },
+    {
+      "message": "i think i m happy but i feel more sad what to do",
+      "emotion": "sadness",
+      "response": "I'm sorry to hear you're feeling down. That's tough. Want to talk about what's going on?",
+      "timestamp": "2026-01-02T00:00:36.716841"
+    },
+    {
+      "message": "hi",
+      "emotion": "neutral",
+      "response": "Hello! How are you feeling today?",
+      "timestamp": "2026-01-02T00:07:50.294809"
+    },
+    {
+      "message": "how are you",
+      "emotion": "neutral",
+      "response": "I understand. What's been going through your head about this? Want me to recommend something good to watch? Might be a nice break.",
+      "timestamp": "2026-01-02T00:07:51.577934"
+    },
+    {
+      "message": "hi",
+      "emotion": "neutral",
+      "response": "Hey! Good to see you. What's on your mind?",
+      "timestamp": "2026-01-02T00:11:33.997407"
+    },
+    {
+      "message": "how are you",
+      "emotion": "neutral",
+      "response": "What's been going through your mind about this?",
+      "timestamp": "2026-01-02T00:11:37.389345"
+    },
+    {
+      "message": "i feel a bit happy but more sad",
+      "emotion": "sadness",
+      "response": "Even though it might seem minor, these feelings are still valid and worth talking about. What's been going through your mind about this?",
+      "timestamp": "2026-01-02T00:12:06.109712"
+    },
+    {
+      "message": "hi",
+      "emotion": "neutral",
+      "response": "Hey! How's your day going?",
+      "timestamp": "2026-01-02T18:03:02.267192"
+    },
+    {
+      "message": "good glad u asked how are you",
+      "emotion": "joy",
+      "response": "What's been going through your mind about this?",
+      "timestamp": "2026-01-02T18:03:16.353594"
+    },
+    {
+      "message": "hii",
+      "emotion": "neutral",
+      "response": "What's been going through your mind about this?",
+      "timestamp": "2026-01-02T18:11:27.967144"
+    },
+    {
+      "message": "how are youu",
+      "emotion": "neutral",
+      "response": "What's been going through your mind about this?",
+      "timestamp": "2026-01-02T18:11:29.773682"
+    },
+    {
+      "message": "hii",
+      "emotion": "neutral",
+      "response": "That's interesting! Tell me more about that.",
+      "timestamp": "2026-01-02T18:13:54.478053"
+    },
+    {
+      "message": "how are you",
+      "emotion": "neutral",
+      "response": "I'm doing well! Always excited to meet someone new. What's been on your mind lately?",
+      "timestamp": "2026-01-02T18:13:56.454819"
+    },
+    {
+      "message": "i m feeling sad rn",
+      "emotion": "sadness",
+      "response": "That sounds really difficult. Sometimes it helps to talk about what's bothering us.",
+      "timestamp": "2026-01-02T18:14:18.822101"
+    },
+    {
+      "message": "why these ones?",
+      "emotion": "surprise",
+      "response": "Thanks for sharing that with me. How are you feeling about everything?",
+      "timestamp": "2026-01-02T18:14:43.870924"
+    },
+    {
+      "message": "hi",
+      "emotion": "neutral",
+      "response": "Hello! How are you feeling today?",
+      "timestamp": "2026-01-02T18:17:00.034458"
+    },
+    {
+      "message": "i m goodd glad u asked",
+      "emotion": "joy",
+      "response": "That's wonderful to hear! What's been making you feel so upbeat?",
+      "timestamp": "2026-01-02T18:17:05.920695"
+    },
+    {
+      "message": "hii",
+      "emotion": "neutral",
+      "response": "Hey! How's your day going?",
+      "timestamp": "2026-01-02T18:18:08.496641"
+    },
+    {
+      "message": "good",
+      "emotion": "neutral",
+      "response": "That's great to hear! What's been going well for you?",
+      "timestamp": "2026-01-02T18:18:11.444031"
+    },
+    {
+      "message": "i just ahd pizza",
+      "emotion": "neutral",
+      "response": "I appreciate you opening up. What would help you feel better about this situation?",
+      "timestamp": "2026-01-02T18:18:18.798187"
+    },
+    {
+      "message": "hii",
+      "emotion": "neutral",
+      "response": "Hello! How are you feeling today?",
+      "timestamp": "2026-01-02T18:25:01.197125"
+    },
+    {
+      "message": "greatt glad u asked",
+      "emotion": "joy",
+      "response": "That's wonderful to hear! What's been making you feel so upbeat?",
+      "timestamp": "2026-01-02T18:25:15.859373"
+    },
+    {
+      "message": "nothing much , currently not so good",
+      "emotion": "sadness",
+      "response": "That sounds really difficult. Sometimes it helps to talk about what's bothering us.",
+      "timestamp": "2026-01-02T18:25:29.767416"
+    },
+    {
+      "message": "why these?",
+      "emotion": "surprise",
+      "response": "Those recommendations came from analyzing your emotional state and matching it with films that have proven to resonate with people in similar situations. Each movie offers something different - whether it's emotional catharsis, distraction, or inspiration.",
+      "timestamp": "2026-01-02T18:25:52.302009"
+    },
+    {
+      "message": "okayy thank you",
+      "emotion": "neutral",
+      "response": "That's interesting! Tell me more about that.",
+      "timestamp": "2026-01-02T18:26:05.376103"
+    }
+  ],
+  "recommendations": [
+    {
+      "message": "yes recommend me movies",
+      "emotion": "joy",
+      "movies": [
+        "The Raid",
+        "The Hidden Fortress",
+        "The Intouchables"
+      ],
+      "timestamp": "2026-01-01T23:55:48.526601"
+    },
+    {
+      "message": "I'm feeling sad and want to watch something",
+      "emotion": "sadness",
+      "movies": [
+        "Memories of Murder",
+        "Inside Llewyn Davis",
+        "The Lord of the Rings: The Return of the King"
+      ],
+      "timestamp": "2026-01-02T00:00:14.985196"
+    },
+    {
+      "message": "i mean just recommend me movies taht will uplift my mood",
+      "emotion": "joy",
+      "movies": [
+        "The Raid",
+        "The Hidden Fortress",
+        "The Intouchables"
+      ],
+      "timestamp": "2026-01-02T00:00:51.907634"
+    },
+    {
+      "message": "i wanna feel sad suggest me romantic movies",
+      "emotion": "sadness",
+      "movies": [
+        "Memories of Murder",
+        "Inside Llewyn Davis",
+        "The Lord of the Rings: The Return of the King"
+      ],
+      "timestamp": "2026-01-02T00:01:13.910673"
+    },
+    {
+      "message": "i want recommendations on movies i m feeling happy",
+      "emotion": "joy",
+      "movies": [
+        "The Raid",
+        "The Hidden Fortress",
+        "The Intouchables"
+      ],
+      "timestamp": "2026-01-02T00:11:53.394552"
+    },
+    {
+      "message": "nothing much i just want movies",
+      "emotion": "neutral",
+      "movies": [
+        "Tenet",
+        "Dunkirk",
+        "The Lives of Others"
+      ],
+      "timestamp": "2026-01-02T00:12:16.077203"
+    },
+    {
+      "message": "recommend me i m sad",
+      "emotion": "sadness",
+      "movies": [
+        "Memories of Murder",
+        "Inside Llewyn Davis",
+        "The Lord of the Rings: The Return of the King"
+      ],
+      "timestamp": "2026-01-02T18:12:06.723402"
+    },
+    {
+      "message": "well i would like to have movies recommended",
+      "emotion": "neutral",
+      "movies": [
+        "Tenet",
+        "Dunkirk",
+        "The Lives of Others"
+      ],
+      "timestamp": "2026-01-02T18:14:33.576234"
+    },
+    {
+      "message": "nothing much just generally feeling good i need some movies recommended",
+      "emotion": "joy",
+      "movies": [
+        "The Raid",
+        "The Hidden Fortress",
+        "The Intouchables"
+      ],
+      "timestamp": "2026-01-02T18:17:18.971505"
+    },
+    {
+      "message": "my brother is feeling sad though he needs movies recommeneded as well",
+      "emotion": "sadness",
+      "movies": [
+        "Memories of Murder",
+        "Inside Llewyn Davis",
+        "The Lord of the Rings: The Return of the King"
+      ],
+      "timestamp": "2026-01-02T18:17:43.391015"
+    },
+    {
+      "message": "moviess recommendation",
+      "emotion": "neutral",
+      "movies": [
+        "Tenet",
+        "Dunkirk",
+        "The Lives of Others"
+      ],
+      "timestamp": "2026-01-02T18:18:26.482015"
+    },
+    {
+      "message": "i need movies that would help me",
+      "emotion": "neutral",
+      "movies": [
+        "Tenet",
+        "Dunkirk",
+        "The Lives of Others"
+      ],
+      "timestamp": "2026-01-02T18:25:45.919825"
+    },
+    {
+      "message": "ok",
+      "emotion": "neutral",
+      "movies": [
+        "Tenet",
+        "Dunkirk",
+        "The Lives of Others"
+      ],
+      "timestamp": "2026-01-02T18:26:08.998422"
+    }
+  ]
+}

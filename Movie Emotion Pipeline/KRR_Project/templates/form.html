@@ -1,0 +1,514 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Based Input - Movie Recommender</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 900px;
+            max-height: 90vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .interface-header {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            border-bottom: 1px solid #dee2e6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .interface-header h3 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .back-btn {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-btn:hover {
+            background: #5a6268;
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid #764ba2;
+        }
+
+        .form-section h4 {
+            margin: 0 0 20px 0;
+            color: #2c3e50;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1rem;
+        }
+
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #764ba2;
+            box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.1);
+        }
+
+        .intensity-slider {
+            margin: 15px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+        }
+
+        .intensity-slider input[type="range"] {
+            width: 100%;
+            margin: 15px 0;
+            height: 8px;
+            border-radius: 5px;
+            background: #e9ecef;
+            outline: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .intensity-slider input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #764ba2;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .intensity-slider input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+            box-shadow: 0 6px 20px rgba(118, 75, 162, 0.4);
+        }
+
+        .intensity-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #5a6c7d;
+            font-weight: 500;
+        }
+
+        #intensity-value {
+            font-weight: bold;
+            color: #764ba2;
+            font-size: 1rem;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            margin-bottom: 0;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .checkbox-group label:hover {
+            background: rgba(118, 75, 162, 0.1);
+            border-color: #764ba2;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 8px;
+            transform: scale(1.2);
+            accent-color: #764ba2;
+        }
+
+        .form-submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(118, 75, 162, 0.3);
+        }
+
+        .form-submit-btn:hover {
+            background: linear-gradient(135deg, #6a4190 0%, #e084f0 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(118, 75, 162, 0.4);
+        }
+
+        .results-section {
+            display: none;
+            padding: 30px;
+            border-top: 1px solid #dee2e6;
+            background: #f8f9fa;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .results-content {
+            line-height: 1.6;
+        }
+
+        .recommendation-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 4px solid #764ba2;
+        }
+
+        .recommendation-card h4 {
+            margin: 0 0 10px 0;
+            color: #764ba2;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .recommendation-card p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+            color: #5a6c7d;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-style: italic;
+            color: #5a6c7d;
+            font-size: 1.1rem;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #f5c6cb;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 10px;
+            }
+            
+            .checkbox-group {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+            
+            .form-container {
+                padding: 20px;
+            }
+            
+            .form-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Form-Based Input Mode</h1>
+            <p>Answer a few questions to help us understand your emotions and preferences!</p>
+        </div>
+
+        <div class="interface-header">
+            <h3>Emotion & Preference Form</h3>
+            <a href="/" class="back-btn">← Back to Options</a>
+        </div>
+        
+        <div class="form-container">
+            <form id="emotion-form">
+                <div class="form-section">
+                    <h4>Current Emotional State</h4>
+                    
+                    <div class="form-group">
+                        <label for="primary-emotion">How are you feeling right now?</label>
+                        <select id="primary-emotion" name="primary_emotion" required>
+                            <option value="">Select your primary emotion</option>
+                            <option value="joy">Happy/Joyful</option>
+                            <option value="sadness">Sad/Down</option>
+                            <option value="anger">Angry/Frustrated</option>
+                            <option value="fear">Anxious/Worried</option>
+                            <option value="surprise">Excited/Surprised</option>
+                            <option value="disgust">Disgusted/Annoyed</option>
+                            <option value="neutral">Neutral/Calm</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emotion-intensity">How intense is this feeling?</label>
+                        <div class="intensity-slider">
+                            <input type="range" id="emotion-intensity" name="intensity" min="1" max="10" value="5">
+                            <div class="intensity-labels">
+                                <span>Mild (1)</span>
+                                <span id="intensity-value">Moderate (5)</span>
+                                <span>Very Intense (10)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emotion-reason">What's causing you to feel this way? (Optional)</label>
+                        <select id="emotion-reason" name="reason">
+                            <option value="">No specific reason</option>
+                            <option value="work">Work/Career stress</option>
+                            <option value="relationships">Relationship issues</option>
+                            <option value="family">Family matters</option>
+                            <option value="health">Health concerns</option>
+                            <option value="finances">Financial worries</option>
+                            <option value="school">School/Studies</option>
+                            <option value="achievement">Recent achievement</option>
+                            <option value="loss">Loss or disappointment</option>
+                            <option value="other">Something else</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h4>Movie Preferences</h4>
+                    
+                    <div class="form-group">
+                        <label for="preferred-genres">What genres do you usually enjoy? (Select multiple)</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="genres" value="action"> Action</label>
+                            <label><input type="checkbox" name="genres" value="comedy"> Comedy</label>
+                            <label><input type="checkbox" name="genres" value="drama"> Drama</label>
+                            <label><input type="checkbox" name="genres" value="horror"> Horror</label>
+                            <label><input type="checkbox" name="genres" value="romance"> Romance</label>
+                            <label><input type="checkbox" name="genres" value="thriller"> Thriller</label>
+                            <label><input type="checkbox" name="genres" value="adventure"> Adventure</label>
+                            <label><input type="checkbox" name="genres" value="sci-fi"> Sci-Fi</label>
+                            <label><input type="checkbox" name="genres" value="fantasy"> Fantasy</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mood-goal">What do you want the movie to do for your mood?</label>
+                        <select id="mood-goal" name="mood_goal">
+                            <option value="">No preference</option>
+                            <option value="enhance">Enhance my current mood</option>
+                            <option value="change">Change my mood completely</option>
+                            <option value="comfort">Provide comfort and relaxation</option>
+                            <option value="distract">Distract me from my problems</option>
+                            <option value="inspire">Inspire and motivate me</option>
+                            <option value="cathartic">Help me process my emotions</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h4>Additional Context</h4>
+                    
+                    <div class="form-group">
+                        <label for="additional-context">Anything else you'd like me to know?</label>
+                        <textarea id="additional-context" name="context" rows="3" placeholder="e.g., I had a tough day at work, celebrating something special, feeling nostalgic..."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="form-submit-btn">Get My Movie Recommendations</button>
+            </form>
+        </div>
+
+        <div class="results-section" id="results-section">
+            <div class="results-content" id="results-content"></div>
+        </div>
+    </div>
+
+    <script>
+        const emotionForm = document.getElementById('emotion-form');
+        const resultsSection = document.getElementById('results-section');
+        const resultsContent = document.getElementById('results-content');
+        const intensitySlider = document.getElementById('emotion-intensity');
+        const intensityValue = document.getElementById('intensity-value');
+
+        // Update intensity slider display
+        intensitySlider.addEventListener('input', function() {
+            const value = this.value;
+            let intensityText = '';
+            if (value <= 3) intensityText = `Mild (${value})`;
+            else if (value <= 7) intensityText = `Moderate (${value})`;
+            else intensityText = `Very Intense (${value})`;
+            
+            intensityValue.textContent = intensityText;
+        });
+
+        // Handle form submission
+        emotionForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.querySelector('.form-submit-btn');
+            const originalText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.textContent = 'Analyzing...';
+            submitBtn.disabled = true;
+            
+            resultsSection.style.display = 'block';
+            resultsContent.innerHTML = '<div class="loading">Analyzing your emotions and finding perfect movies...</div>';
+
+            try {
+                const formData = new FormData(emotionForm);
+                
+                const response = await fetch('/api/form-recommendation/', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (data.error) {
+                    resultsContent.innerHTML = `<div class="error">Sorry, I encountered an error: ${data.error}</div>`;
+                } else {
+                    let resultsHtml = `
+                        <div class="form-response">
+                            <h4>Emotion Analysis Results</h4>
+                            <p><strong>Primary Emotion:</strong> ${data.emotion}</p>
+                            <p><strong>Analysis:</strong> ${data.analysis || 'Based on your form responses, I understand your current emotional state.'}</p>
+                            
+                            <h4>Your Personalized Recommendations</h4>
+                    `;
+
+                    if (data.movies && data.movies.length > 0) {
+                        data.movies.forEach((movie, index) => {
+                            resultsHtml += `
+                                <div class="recommendation-card">
+                                    <h4>${index + 1}. ${movie.title} (${movie.year})</h4>
+                                    <p><strong>Director:</strong> ${movie.director}</p>
+                                    <p><strong>Genre:</strong> ${movie.genre}</p>
+                                    <p><strong>Why this movie:</strong> ${movie.reasoning || 'This movie matches your current emotional state and preferences.'}</p>
+                                    <p><em>"${movie.review_snippet}"</em></p>
+                                </div>
+                            `;
+                        });
+                    } else {
+                        resultsHtml += '<p>Sorry, I couldn\'t find movies that match your specific criteria. Try adjusting your preferences!</p>';
+                    }
+
+                    resultsHtml += `
+                            <div style="margin-top: 20px; padding: 15px; background: rgba(118, 75, 162, 0.1); border-radius: 8px;">
+                                <p><strong>Want different suggestions?</strong> You can adjust your form settings above and submit again, or try the Direct Chat mode for a more conversational experience!</p>
+                            </div>
+                        </div>
+                    `;
+
+                    resultsContent.innerHTML = resultsHtml;
+                }
+
+            } catch (error) {
+                resultsContent.innerHTML = '<div class="error">Sorry, something went wrong with the server. Please try again!</div>';
+                console.error(error);
+            } finally {
+                // Reset button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Emotion Recommender</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 600px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+            color: white;
+            padding: 40px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .header p {
+            margin: 15px 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .options {
+            padding: 60px 40px;
+        }
+
+        .options h2 {
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .option-btn {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .chat-btn {
+            background: linear-gradient(135deg, #4a90e2 0%, #667eea 100%);
+        }
+
+        .form-btn {
+            background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+        }
+
+        .option-btn:hover {
+            transform: scale(1.1) translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .btn-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .btn-text {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .btn-desc {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            
+            .option-btn {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Emotion Movie Recommender</h1>
+            <p>Tell me how you feel, and I'll suggest a movie!</p>
+        </div>
+
+        <div class="options">
+            <h2>Choose Your Experience</h2>
+            
+            <div class="button-container">
+                <a href="/chat/" class="option-btn chat-btn">
+                    <div class="btn-icon">CHAT</div>
+                    <div class="btn-text">Direct Chat</div>
+                    <div class="btn-desc">Natural conversation</div>
+                </a>
+                
+                <a href="/form/" class="option-btn form-btn">
+                    <div class="btn-icon">FORM</div>
+                    <div class="btn-text">Form-Based Input</div>
+                    <div class="btn-desc">Structured questions</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
