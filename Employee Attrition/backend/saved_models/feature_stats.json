@@ -1,0 +1,243 @@
+{
+  "numeric": {
+    "Age": {
+      "mean": 36.923809523809524,
+      "std": 9.132265690615387
+    },
+    "DailyRate": {
+      "mean": 802.4857142857143,
+      "std": 403.371828600912
+    },
+    "DistanceFromHome": {
+      "mean": 9.19251700680272,
+      "std": 8.104106529671768
+    },
+    "Education": {
+      "mean": 2.912925170068027,
+      "std": 1.0238165299102608
+    },
+    "EmployeeCount": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "EnvironmentSatisfaction": {
+      "mean": 2.721768707482993,
+      "std": 1.0927103547111134
+    },
+    "HourlyRate": {
+      "mean": 65.89115646258503,
+      "std": 20.322511646324017
+    },
+    "JobInvolvement": {
+      "mean": 2.7299319727891156,
+      "std": 0.7113190741884202
+    },
+    "JobLevel": {
+      "mean": 2.0639455782312925,
+      "std": 1.1065633247112856
+    },
+    "JobSatisfaction": {
+      "mean": 2.7285714285714286,
+      "std": 1.1024709415085499
+    },
+    "MonthlyIncome": {
+      "mean": 6502.931292517007,
+      "std": 4706.355164823003
+    },
+    "MonthlyRate": {
+      "mean": 14313.103401360544,
+      "std": 7115.364616521268
+    },
+    "NumCompaniesWorked": {
+      "mean": 2.6931972789115646,
+      "std": 2.497159198593844
+    },
+    "PercentSalaryHike": {
+      "mean": 15.209523809523809,
+      "std": 3.658692627979528
+    },
+    "PerformanceRating": {
+      "mean": 3.1537414965986397,
+      "std": 0.3607007746349458
+    },
+    "RelationshipSatisfaction": {
+      "mean": 2.7122448979591836,
+      "std": 1.0808410657505316
+    },
+    "StandardHours": {
+      "mean": 80.0,
+      "std": 0.0
+    },
+    "StockOptionLevel": {
+      "mean": 0.7938775510204081,
+      "std": 0.8517867966287158
+    },
+    "TotalWorkingYears": {
+      "mean": 11.279591836734694,
+      "std": 7.778134700893234
+    },
+    "TrainingTimesLastYear": {
+      "mean": 2.7993197278911564,
+      "std": 1.2888320187689346
+    },
+    "WorkLifeBalance": {
+      "mean": 2.7612244897959184,
+      "std": 0.7062354909319911
+    },
+    "YearsAtCompany": {
+      "mean": 7.0081632653061225,
+      "std": 6.124440945793706
+    },
+    "YearsInCurrentRole": {
+      "mean": 4.229251700680272,
+      "std": 3.621904465478753
+    },
+    "YearsSinceLastPromotion": {
+      "mean": 2.1877551020408164,
+      "std": 3.2213340279481772
+    },
+    "YearsWithCurrManager": {
+      "mean": 4.12312925170068,
+      "std": 3.5669222623251646
+    },
+    "Income_Per_Year": {
+      "mean": 1169.6357250339552,
+      "std": 1353.5179335103987
+    },
+    "Satisfaction_Balance_Score": {
+      "mean": 7.519047619047619,
+      "std": 3.651201150480461
+    },
+    "Total_Satisfaction": {
+      "mean": 8.162585034013606,
+      "std": 1.884079770844449
+    },
+    "YearsAtCompany_Ratio": {
+      "mean": 0.5818298393474538,
+      "std": 0.2843791393621172
+    },
+    "YearsWithCurrManager_Ratio": {
+      "mean": 0.46550950359792304,
+      "std": 0.27666851929127445
+    },
+    "YearsSinceLastPromotion_Ratio": {
+      "mean": 0.23645754754054318,
+      "std": 0.26926678736354615
+    },
+    "WorkIntensity": {
+      "mean": 0.7714285714285715,
+      "std": 1.2860317068487883
+    },
+    "PromotionRate": {
+      "mean": 0.23645754754054318,
+      "std": 0.26926678736354615
+    },
+    "TrainingOpportunity": {
+      "mean": 19.64625850340136,
+      "std": 20.639603540294154
+    },
+    "DistanceImpact": {
+      "mean": 2.6945578231292515,
+      "std": 6.034360595595602
+    },
+    "JobStability": {
+      "mean": 8.500115389146,
+      "std": 9.315723885538786
+    },
+    "EngagementScore": {
+      "mean": 2.7267573696145124,
+      "std": 0.5629817423898247
+    },
+    "CompensationSatisfaction": {
+      "mean": 1.7094281908366042,
+      "std": 1.0181370120340247
+    },
+    "CareerStagnation": {
+      "mean": 15.646938775510204,
+      "std": 32.41094298725019
+    },
+    "WorkLifePressure": {
+      "mean": 0.6421768707482993,
+      "std": 1.0860228364863236
+    },
+    "LoyaltyScore": {
+      "mean": 0.37961908191046834,
+      "std": 0.27253175863103185
+    },
+    "ManagerRelationship": {
+      "mean": 11.179591836734694,
+      "std": 11.462407879290716
+    },
+    "IncomeExperienceGap": {
+      "mean": 140.39356680178184,
+      "std": 284.5539474777439
+    },
+    "TrainingEffectiveness": {
+      "mean": 0.623947831893522,
+      "std": 0.7138159277286041
+    },
+    "CommuteStress": {
+      "mean": 6.161904761904762,
+      "std": 14.710759324701668
+    }
+  },
+  "categorical": {
+    "BusinessTravel": {
+      "Travel_Rarely": 0.7095238095238096,
+      "Travel_Frequently": 0.18843537414965986,
+      "Non-Travel": 0.10204081632653061
+    },
+    "Department": {
+      "Research & Development": 0.6537414965986394,
+      "Sales": 0.3034013605442177,
+      "Human Resources": 0.04285714285714286
+    },
+    "EducationField": {
+      "Life Sciences": 0.4122448979591837,
+      "Medical": 0.31564625850340133,
+      "Marketing": 0.10816326530612246,
+      "Technical Degree": 0.08979591836734693,
+      "Other": 0.055782312925170066,
+      "Human Resources": 0.018367346938775512
+    },
+    "Gender": {
+      "Male": 0.6,
+      "Female": 0.4
+    },
+    "JobRole": {
+      "Sales Executive": 0.2217687074829932,
+      "Research Scientist": 0.19863945578231293,
+      "Laboratory Technician": 0.1761904761904762,
+      "Manufacturing Director": 0.09863945578231292,
+      "Healthcare Representative": 0.0891156462585034,
+      "Manager": 0.06938775510204082,
+      "Sales Representative": 0.05646258503401361,
+      "Research Director": 0.05442176870748299,
+      "Human Resources": 0.03537414965986395
+    },
+    "MaritalStatus": {
+      "Married": 0.45782312925170066,
+      "Single": 0.3197278911564626,
+      "Divorced": 0.22244897959183674
+    },
+    "Over18": {
+      "Y": 1.0
+    },
+    "OverTime": {
+      "No": 0.7170068027210884,
+      "Yes": 0.2829931972789116
+    },
+    "AgeGroup": {
+      "Mid": 0.42108843537414964,
+      "Young": 0.26258503401360545,
+      "Senior": 0.21904761904761905,
+      "Veteran": 0.09727891156462586
+    },
+    "IncomeLevel": {
+      "Medium": 0.35306122448979593,
+      "Low": 0.2687074829931973,
+      "VeryHigh": 0.19115646258503402,
+      "High": 0.1870748299319728
+    }
+  }
+}

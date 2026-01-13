@@ -1,0 +1,105 @@
+{
+  "model": "LogisticRegression",
+  "shap_top": [
+    {
+      "feature": "NumCompaniesWorked",
+      "mean_abs_shap": 0.4141518717360131
+    },
+    {
+      "feature": "TotalWorkingYears",
+      "mean_abs_shap": 0.3251926183491973
+    },
+    {
+      "feature": "MaritalStatus_Single",
+      "mean_abs_shap": 0.23793952763910925
+    },
+    {
+      "feature": "JobStability",
+      "mean_abs_shap": 0.2360832848653728
+    },
+    {
+      "feature": "JobInvolvement",
+      "mean_abs_shap": 0.23180717403897608
+    },
+    {
+      "feature": "YearsWithCurrManager_Ratio",
+      "mean_abs_shap": 0.21148248209256473
+    },
+    {
+      "feature": "Total_Satisfaction",
+      "mean_abs_shap": 0.20407017850211148
+    },
+    {
+      "feature": "Department_Sales",
+      "mean_abs_shap": 0.19533836467910798
+    },
+    {
+      "feature": "JobRole_Laboratory Technician",
+      "mean_abs_shap": 0.18107642925144574
+    },
+    {
+      "feature": "YearsInCurrentRole",
+      "mean_abs_shap": 0.17414898289009212
+    },
+    {
+      "feature": "RelationshipSatisfaction",
+      "mean_abs_shap": 0.17378330424088487
+    },
+    {
+      "feature": "WorkLifePressure",
+      "mean_abs_shap": 0.1712572946895455
+    },
+    {
+      "feature": "WorkIntensity",
+      "mean_abs_shap": 0.16888663522716907
+    },
+    {
+      "feature": "BusinessTravel_Travel_Frequently",
+      "mean_abs_shap": 0.16269438976927725
+    },
+    {
+      "feature": "EnvironmentSatisfaction",
+      "mean_abs_shap": 0.16007513326905565
+    },
+    {
+      "feature": "BusinessTravel_Non-Travel",
+      "mean_abs_shap": 0.15807967056989014
+    },
+    {
+      "feature": "YearsSinceLastPromotion",
+      "mean_abs_shap": 0.15697695963435357
+    },
+    {
+      "feature": "Department_Research & Development",
+      "mean_abs_shap": 0.15676036067534826
+    },
+    {
+      "feature": "IncomeLevel_Medium",
+      "mean_abs_shap": 0.1548258797098267
+    },
+    {
+      "feature": "Age",
+      "mean_abs_shap": 0.1488787889778424
+    },
+    {
+      "feature": "PercentSalaryHike",
+      "mean_abs_shap": 0.13556960270519286
+    },
+    {
+      "feature": "Income_Per_Year",
+      "mean_abs_shap": 0.13512693967580697
+    },
+    {
+      "feature": "EngagementScore",
+      "mean_abs_shap": 0.11702647839065283
+    },
+    {
+      "feature": "EducationField_Life Sciences",
+      "mean_abs_shap": 0.10978053483972103
+    },
+    {
+      "feature": "MaritalStatus_Divorced",
+      "mean_abs_shap": 0.1085330161526615
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Minimal requirements (installs latest compatible versions)
+flask
+flask-cors
+pandas
+numpy
+scikit-learn
+imbalanced-learn
+xgboost
+lightgbm
+joblib
+python-dotenv
+shap

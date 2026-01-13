@@ -1,0 +1,105 @@
+{
+  "model": "RandomForest",
+  "shap_top": [
+    {
+      "feature": "EducationField_Other",
+      "mean_abs_shap": 0.045499592380565675
+    },
+    {
+      "feature": "EducationField_Medical",
+      "mean_abs_shap": 0.045499592380565654
+    },
+    {
+      "feature": "StandardHours",
+      "mean_abs_shap": 0.034291764368466565
+    },
+    {
+      "feature": "StockOptionLevel",
+      "mean_abs_shap": 0.03429176436846656
+    },
+    {
+      "feature": "MaritalStatus_Married",
+      "mean_abs_shap": 0.027931590343468277
+    },
+    {
+      "feature": "MaritalStatus_Divorced",
+      "mean_abs_shap": 0.02793159034346827
+    },
+    {
+      "feature": "JobRole_Manager",
+      "mean_abs_shap": 0.021329186392614736
+    },
+    {
+      "feature": "JobRole_Manufacturing Director",
+      "mean_abs_shap": 0.02132918639261473
+    },
+    {
+      "feature": "Age",
+      "mean_abs_shap": 0.020652531507634186
+    },
+    {
+      "feature": "DailyRate",
+      "mean_abs_shap": 0.020652531507634183
+    },
+    {
+      "feature": "YearsWithCurrManager",
+      "mean_abs_shap": 0.019060190047526945
+    },
+    {
+      "feature": "BusinessTravel_Non-Travel",
+      "mean_abs_shap": 0.01906019004752694
+    },
+    {
+      "feature": "Gender_Female",
+      "mean_abs_shap": 0.01902065465237996
+    },
+    {
+      "feature": "EducationField_Technical Degree",
+      "mean_abs_shap": 0.019020654652379957
+    },
+    {
+      "feature": "OverTime_No",
+      "mean_abs_shap": 0.018290422917794952
+    },
+    {
+      "feature": "OverTime_Yes",
+      "mean_abs_shap": 0.01829042291779495
+    },
+    {
+      "feature": "TrainingTimesLastYear",
+      "mean_abs_shap": 0.017688845313974386
+    },
+    {
+      "feature": "TotalWorkingYears",
+      "mean_abs_shap": 0.017688845313974386
+    },
+    {
+      "feature": "YearsAtCompany",
+      "mean_abs_shap": 0.017470475952515434
+    },
+    {
+      "feature": "WorkLifeBalance",
+      "mean_abs_shap": 0.01747047595251542
+    },
+    {
+      "feature": "MonthlyIncome",
+      "mean_abs_shap": 0.017314271351290555
+    },
+    {
+      "feature": "MonthlyRate",
+      "mean_abs_shap": 0.017314271351290548
+    },
+    {
+      "feature": "JobRole_Research Scientist",
+      "mean_abs_shap": 0.0130446230154738
+    },
+    {
+      "feature": "JobRole_Research Director",
+      "mean_abs_shap": 0.013044623015473794
+    },
+    {
+      "feature": "EmployeeCount",
+      "mean_abs_shap": 0.012298485127254373
+    }
+  ]
+}
