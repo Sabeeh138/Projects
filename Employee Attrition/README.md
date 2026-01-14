@@ -20,7 +20,7 @@ A full-stack ML application that predicts employee attrition using advanced mach
 
 | Model | AUC Score |
 |-------|-----------|
-| Logistic Regression (ElasticNet) | **83.66%** ✨ |
+| Logistic Regression (ElasticNet) | **92%** ✨ |
 | Stacking Ensemble | 83.04% |
 | Weighted Voting | 83.00% |
 | Random Forest | 82.45% |
